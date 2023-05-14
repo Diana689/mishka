@@ -1,0 +1,774 @@
+.form-page{
+  font-family: 'Open Sans';
+}
+
+.form-page__body{
+  margin: 0;
+}
+
+.main-title__wrapper{
+  background-color:  #F1F1F1;
+}
+
+.form-page__main-title{
+  width: 260px;
+  Font-size: 27px;
+  Line-height: 30px;
+  margin: 0 auto;
+  padding: 73.5px 0;
+  text-align: center;
+}
+
+.form-page__main-intro{
+  width: 260px;
+  margin: 0 auto;
+  margin-top: 17px;
+  margin-bottom: 29px;
+  Font-size: 13px;
+  Line-height: 24px;
+  color: #444444;
+}
+
+/* тип, цвет *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+.form-page__type,
+.form-page__color{
+  width: 100%;
+}
+
+.form-page__type-wrapper,
+.form-page__color-wrapper{
+  margin: 0 30px;
+  padding-bottom: 43px;
+}
+
+.form-page__type-title,
+.form-page__color-title{
+  Font-size: 17px;
+  Line-height: 16px;
+  margin: 0;
+  margin-bottom: 35px;
+  color: #63D1BB;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.form-page__type-title::after,
+.form-page__color-title::after{
+  content: "";
+  position: absolute;
+  left: 60px;
+  top: 8px;
+  width: calc( 100% - 60px);
+  height: 1px;
+  background-color: #62D1BA;
+}
+
+.form-page__type-list,
+.form-page__color-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-page__type-item{
+  margin-bottom: 26px;
+  padding-left: 61px;
+  Font-size: 17px;
+  Line-height: 18px;
+  font-weight: 700;
+}
+
+.form-page__color-item{
+  margin-bottom: 43px;
+  padding-left: 61px;
+  Font-size: 17px;
+  Line-height: 18px;
+  font-weight: 700;
+}
+
+.form-page__type-item:last-child,
+.form-page__color-item:last-child{
+  margin-bottom: 0;
+}
+
+.type-item__control,
+.color-item__control{
+  position: relative;
+  cursor: pointer;
+}
+
+.control-mark{
+  position: absolute;
+  left: -61px;
+  top: calc(50% - 20px);
+  width: 39px;
+  height: 39px;
+  border: 2px solid #444444;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color-item__control-mark{
+  position: absolute;
+  left: -61px;
+  top: calc(50% - 20px);
+  width: 35px;
+  height: 35px;
+  border: 2px solid #444444;
+  cursor: pointer;
+}
+
+.type-item__control-input[type='radio']:checked + .control-mark::before{
+  position: absolute;
+  top: calc(50% - 9.15px);
+  left: calc(50% - 9.15px);
+  width: 18.3px;
+  height: 18.3px;
+  background-color: #62D1BA;
+  border-radius: 50%;
+  content: "";
+}
+
+.color-item__control-inpyt[type='checkbox']:checked + .color-item__control-mark{
+  background: url(../img/form/Tick.svg) top 11.7px left 7.7px/ 23.22px 16.1px no-repeat;
+}
+
+.type-item__control:hover .control-mark,
+.color-item__control:hover .color-item__control-mark{
+  border: 2px solid #62D1BA;
+}
+
+.type-item__control:active .control-mark,
+.color-item__control:active .color-item__control-mark{
+  border: 2px solid #000000;
+  opacity: 30%;
+}
+
+/* ФИО *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+.form-page__personal-data{
+  width: 100%;
+}
+
+.personal-data__wrapper{
+  margin: 0 30px;
+  padding-bottom: 12.5px;
+}
+
+.personal-data__title{
+  Font-size: 17px;
+  Line-height: 16px;
+  margin: 0;
+  margin-bottom: 29px;
+  color: #63D1BB;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.personal-data__title::after{
+  content: "";
+  position: absolute;
+  left: 60px;
+  top: 8px;
+  width: calc( 100% - 60px);
+  height: 1px;
+  background-color: #62D1BA;
+}
+
+.personal-data__item{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.personal-data__item-title{
+  Font-size: 17px;
+  Line-height: 18px;
+  font-weight: 700;
+}
+
+.personal-data__item-intro{
+  border: none;
+  position: relative;
+  Font-size: 19px;
+  Line-height: 18px;
+  padding: 17px 0;
+  box-shadow: 0px 2px 0px 0px #000000;
+}
+
+.personal-data__item-intro::placeholder{
+  color: #000000;
+  opacity: 30%;
+}
+
+.personal-data__item:hover .personal-data__item-intro{
+  box-shadow: 0px 2px 0px 0px #62D1BA;
+}
+
+.personal-data__item-intro:focus{
+  outline: none;
+  box-shadow: 0px 2px 0px 0px #62D1BA;
+}
+
+/* контакты *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
+
+.form-page__data-contacts{
+  width: 100%;
+}
+
+.data-contacts__wrapper{
+  margin: 0 30px;
+  padding-bottom: 34.5px;
+}
+
+.data-contacts__item{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 34.5px;
+}
+
+.data-contacts__item:last-child{
+  margin-bottom: 0;
+}
+
+.data-contacts__item-title{
+  Font-size: 17px;
+  Line-height: 16px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 4.5px;
+  color: #63D1BB;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.number::after{
+  content: "";
+  position: absolute;
+  left: 60px;
+  top: 8px;
+  width: calc( 100% - 60px);
+  height: 1px;
+  background-color: #62D1BA;
+}
+
+.email::after{
+  content: "";
+  position: absolute;
+  left: 80px;
+  top: 8px;
+  width: calc( 100% - 80px);
+  height: 1px;
+  background-color: #62D1BA;
+}
+
+.data-contacts__item-intro{
+  border: none;
+  Font-size: 17px;
+  Line-height: 18px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  padding-right: 42px;
+  box-shadow: 0px 2px 0px 0px #000000;
+}
+
+.data-contacts__item-intro::placeholder{
+  color: #000000;
+  opacity: 30%;
+}
+
+.data-contacts__item:hover .data-contacts__item-intro{
+  box-shadow: 0px 2px 0px 0px #62D1BA;
+}
+
+.data-contacts__item-intro:focus{
+  outline: none;
+  box-shadow: 0px 2px 0px 0px #62D1BA;
+}
+
+.icon-phone{
+  fill: #000;
+  width: 25px;
+  height: 24px;
+  position: absolute;
+  top: 31px;
+  right: 7px;
+}
+
+.emai-icon{
+  fill: #000;
+  width: 32px;
+  height: 21px;
+  position: absolute;
+  top: 36px;
+  right: 3px;
+}
+
+.data-contacts__item:hover .data-contacts__item-icon{
+  fill: #62D1BA;
+}
+
+.data-contacts__item-intro:focus + .data-contacts__item-icon{
+  fill: #62D1BA;
+}
+
+/* Доп *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+.form-page__additionally{
+  width: 100%;
+}
+
+.form-page__additionally-wrapper{
+  margin: 0 30px;
+  padding-bottom: 55px;
+}
+
+.form-page__additionally-title{
+  Font-size: 17px;
+  Line-height: 16px;
+  margin: 0;
+  margin-bottom: 22.5px;
+  color: #63D1BB;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.form-page__additionally-title::after{
+  content: "";
+  position: absolute;
+  left: 60px;
+  top: 8px;
+  width: calc( 100% - 60px);
+  height: 1px;
+  background-color: #62D1BA;
+}
+
+.form-page__additionally-comment{
+  width: calc(100% - 34px);
+  min-height: 142px;
+  margin-bottom: 17px;
+  padding: 17px 17px;
+  border: 2px solid #444444;
+  Font-size: 17px;
+  Line-height: 18px;
+}
+
+.form-page__additionally-comment::placeholder{
+  color: #000000;
+  opacity: 30%;
+}
+
+.form-page__additionally-comment:hover{
+  border: 2px solid #62D1BA;
+}
+
+.form-page__additionally-comment:focus{
+  outline: none;
+  border: 2px solid #62D1BA;
+}
+
+.form-page__additionally-intro{
+  display: block;
+  Font-size: 14px;
+  Line-height: 16px;
+  color: #444444;
+  margin-bottom: 30px;
+}
+
+.form-page__button{
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  border: 2px solid #444444;
+  background-color: #FFFFFF;
+}
+
+.form-page__button-intro{
+  display: block;
+  Font-size: 17px;
+  Line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  color: #444444;
+  text-transform: uppercase;
+  padding: 16px 0;
+}
+
+.form-page__button:hover{
+  background-color: #444444;
+}
+
+.form-page__button:hover .form-page__button-intro{
+  color: #FFFFFF;
+}
+
+.form-page__button:active .form-page__button-intro{
+  opacity: 30%;
+}
+
+@media (min-width: 768px){
+
+  .main-title__wrapper{
+    background: url(../img/catalog/zigzag.svg) bottom left/ 770px 24px repeat-x,
+    linear-gradient(#F1F1F1, #F1F1F1) top left/100% 100% no-repeat;
+  }
+
+  .form-page__main-title{
+    width: 668px;
+    Font-size: 43px;
+    Line-height: 50px;
+    padding-top: 56.5px;
+    padding-bottom: 87px;
+  }
+
+  .form-page__main-intro{
+    width: 668px;
+    margin-top: 54px;
+    margin-bottom: 81px;
+    Font-size: 17px;
+    Line-height: 30px;
+  }
+
+  /* тип, цвет *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+  .form-page__color{
+    background-color: #F1F1F1;
+  }
+
+  .form-page__type-wrapper{
+    margin: 0 50px;
+    padding-bottom: 67px;
+    display: flex;
+  }
+
+  .form-page__color-wrapper{
+    margin: 0 50px;
+    padding-top: 65px;
+    padding-bottom: 11px;
+    display: flex;
+  }
+
+  .form-page__type-title,
+  .form-page__color-title{
+    margin-bottom: 0;
+    margin-right: 103px;
+  }
+
+  .form-page__type-title::after,
+  .form-page__color-title::after{
+    display: none;
+  }
+
+  .form-page__color-list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 10px));
+    column-gap: 20px;
+  }
+
+  .form-page__type-item{
+    margin-bottom: 58px;
+    padding-left: 78px;
+    Font-size: 19px;
+  }
+
+  .form-page__color-item{
+    margin-bottom: 60px;
+    padding-left: 82px;
+    Font-size: 19px;
+  }
+
+  .control-mark{
+    left: -78px;
+    top: calc(50% - 24.5px);
+    width: 49px;
+    height: 49px;
+  }
+
+  .type-item__control-input[type='radio']:checked + .control-mark::before{
+    top: calc(50% - 11.3px);
+    left: calc(50% - 11.3px);
+    width: 22.6px;
+    height: 22.6px;
+  }
+
+  .color-item__control-mark{
+    left: -82px;
+    top: calc(50% - 26.2px);
+    width: 49px;
+    height: 49px;
+  }
+
+  .color-item__control-inpyt[type='checkbox']:checked + .color-item__control-mark{
+    background: url(../img/form/Tick.svg) top 16px left 10.6px/ 31.8px 22px no-repeat;
+  }
+
+  /* ФИО *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+  .personal-data__wrapper{
+    margin: 0 50px;
+    padding-top: 50px;
+    padding-bottom: 26px;
+    display: flex;
+  }
+
+  .personal-data__title{
+    padding-top: 17px;
+    margin-bottom: 0;
+    margin-right: 103px;
+  }
+
+  .personal-data__title::after{
+    display: none;
+  }
+
+  .personal-data__items{
+    width: 100%;
+  }
+
+  .personal-data__item{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+  }
+
+  .personal-data__item-title{
+    Font-size: 19px;
+    padding-top: 17px;
+    margin-right: 25px;
+  }
+
+  .personal-data__item-intro{
+    width: 100%;
+    padding-left: 17px;
+  }
+
+  /* контакты *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
+
+  .form-page__data-contacts{
+    background-color: #F1F1F1;
+  }
+
+  .data-contacts__wrapper{
+    margin: 0 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .data-contacts__item{
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  .data-contacts__item-title{
+    margin-bottom: 0px;
+    padding-top: 15px;
+    width: 157px;
+    margin-right: 10px;
+  }
+
+  .number::after{
+    display: none;
+  }
+
+  .email::after{
+    display: none;
+  }
+
+  .data-contacts__item-intro{
+    Font-size: 19px;
+    padding-top: 16px;
+    padding-right: 72px;
+    width: calc(100% - 72px);
+    background-color: #F1F1F1;
+  }
+
+  .icon-phone{
+    top: 11px;
+    right: 26px;
+  }
+
+  .emai-icon{
+    top: 16px;
+    right: 22px;
+  }
+
+  /* Доп *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+  .form-page__additionally-wrapper{
+    margin: 0 50px;
+    padding-top: 50px;
+    padding-bottom: 102px;
+    display: flex;
+    position: relative;
+  }
+
+  .form-page__additionally-title{
+    padding-top: 19px;
+    margin-bottom: 0;
+    width: 157px;
+    margin-right: 10px;
+  }
+
+  .form-page__additionally-title::after{
+    display: none;
+  }
+
+  .form-page__additionally-comment{
+    margin-bottom: 53px;
+    Font-size: 19px;
+  }
+
+  .form-page__additionally-intro{
+    width: 329px;
+    position: absolute;
+    bottom: 61.5px;
+    right: 0;
+    Font-size: 17px;
+    Line-height: 30px;
+    margin-bottom: 0px;
+    text-align: right;
+  }
+
+  .form-page__button{
+    width: 230px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+  }
+
+  .form-page__button-intro{
+    padding: 18px 0;
+  }
+}
+
+@media (min-width: 1150px){
+
+  .main-title__wrapper{
+    background: url(../img/catalog/zigzag.svg) bottom left/ 1150px 34px repeat-x,
+    linear-gradient(#F1F1F1, #F1F1F1) top left/100% 100% no-repeat;
+  }
+
+  .form-page__main-title{
+    width: 1050px;
+    Font-size: 53px;
+    Line-height: 57px;
+    padding-top: 57.5px;
+    padding-bottom: 113px;
+  }
+
+  .form-page__main-intro{
+    width: 702px;
+    margin-top: 98.5px;
+    margin-bottom: 81.5px;
+  }
+
+  /* тип, цвет *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+  .form-page__type-wrapper{
+    margin: 0 97px;
+    padding-bottom: 66px;
+  }
+
+  .form-page__color-wrapper{
+    margin: 0 97px;
+    padding-top: 68px;
+    padding-bottom: 10px;
+  }
+
+  .form-page__type-title,
+  .form-page__color-title{
+    margin-right: 63px;
+  }
+
+  .form-page__type-item{
+    padding-left: 80px;
+  }
+
+  .control-mark{
+    left: -80px;
+  }
+
+  .form-page__color-item{
+    margin-bottom: 57px;
+  }
+
+  .form-page__color-list{
+    grid-template-columns: repeat(3, calc((100%/3) - (20px/3)));
+    column-gap: 10px;
+  }
+
+  /* ФИО *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+  .personal-data__wrapper{
+    margin: 0 97px;
+  }
+
+  .personal-data__title{
+    margin-right: 60px;
+  }
+
+  .personal-data__items{
+    margin-right: 125px;
+  }
+
+  .personal-data__item-title{
+    padding-top: 18px;
+  }
+
+  /* контакты *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
+
+  .data-contacts__wrapper{
+    margin: 0 97px;
+  }
+
+  .data-contacts__item{
+    margin-right: 128px;
+  }
+
+  .data-contacts__item-title{
+    padding-top: 18px;
+    width: 118px;
+  }
+
+  .data-contacts__item-intro{
+    padding-right: 45px;
+    width: calc(100% - 45px);
+  }
+
+  .icon-phone{
+    right: 8px;
+  }
+
+  .emai-icon{
+    right: 4px;
+  }
+
+  /* Доп *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+  .form-page__additionally-wrapper{
+    margin: 0 97px;
+  }
+
+  .form-page__additionally-comment{
+    margin-right: 120px;
+  }
+
+  .form-page__additionally-title{
+    width: 118px;
+  }
+
+  .form-page__button{
+    left: 102px;
+  }
+
+  .form-page__additionally-intro{
+    right: 120px;
+  }
+}

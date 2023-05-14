@@ -1,0 +1,1090 @@
+.page{
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+
+.page__body{
+  margin: 0;
+}
+
+.page-main__title{
+  font-size: 27px;
+  line-height: 30px;
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: center;
+  padding-top: 73px;
+  padding-bottom: 120px;
+  background: url(../img/page/mob/hero-mobile.jpg) top center/ 124% 124% no-repeat;
+}
+
+@media (min-resolution: 2dppx){
+  .page-main__title{
+    background: url(../img/page/mob/hero-mobile@2x.jpg) top center/ 124% 124% no-repeat;
+  }
+}
+
+.page-main__title-wrapper{
+  background-color: #FAFAFA;
+}
+
+.product-categories__wrapper{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.product-categories__icon-item{
+display: none;
+}
+
+.product-categories__list-link{
+  display: block;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.product-categories__list-link:nth-child(2n+1){
+  background-color: #63D1BB;
+}
+
+.product-categories__list-link:nth-child(2n+1):hover{
+  background-color: #59D5BC;
+}
+
+.product-categories__list-link:nth-child(2n){
+  background-color: #56C3B2;
+}
+
+.product-categories__list-link:nth-child(2n):hover{
+  background-color: #46C1AE;
+}
+
+.product-categories__list-link:hover .list-link__intro{
+  margin-bottom: 5px;
+}
+
+.list-link__intro{
+  display: block;
+  max-width: 130px;
+  min-height: 48px;
+  padding-left: 30px;
+}
+
+.interior-items__icon{
+  position: absolute;
+  top: 23px;
+  right: 36px;
+  width: 40px;
+  height: 62px;
+  opacity: 50%;
+}
+
+.toys__icon{
+  position: absolute;
+  top: 21px;
+  right: 27px;
+  width: 60px;
+  height: 60px;
+  opacity: 50%;
+}
+
+.product-categories__list-link:hover .interior-items__icon,
+.product-categories__list-link:hover .toys__icon{
+  opacity: 70%;
+}
+
+.product-categories__list-link:active .interior-items__icon,
+.product-categories__list-link:active .toys__icon{
+  opacity: 30%;
+}
+
+/* товар недели *//*  *//*  *//*  */
+
+.page-main__product-card{
+  background: url(../img/page/mob/zigzag-line.svg) bottom left/ 320px 6px repeat-x;
+}
+
+.product-card__wrapper{
+  width: 260px;
+  margin: 0 auto;
+  padding-bottom: 42px;
+  padding-top: 31px;
+}
+
+.product-card__title{
+  margin-top: 0;
+  margin-bottom: 3.5px;
+  width: 260px;
+  Font-size: 25px;
+  Line-height: 30px;
+}
+
+.product-card__category-title{
+  margin-top: 0;
+  margin-bottom: 17.5px;
+  width: 163px;
+  color: #63D1BB;
+  text-transform: uppercase;
+  Font-size: 17px;
+  Line-height: 20px;
+}
+
+.product-card__discription-intro{
+  margin-top: 0;
+  margin-bottom: 21px;
+  width: 265px;
+  color: #444444;
+  Font-size: 15px;
+  Line-height: 24px;
+}
+
+.product-card__discription{
+  margin-top: 0;
+  margin-bottom: 28px;
+  color: #444444;
+}
+
+.discription__point{
+  display: flex;
+  padding-top: 7px;
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.discription__point::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ECECEC;
+}
+
+.discription__point-name{
+  width: 97px;
+  Font-size: 15px;
+  Line-height: 20px;
+}
+
+.discription__point-info{
+  Font-size: 15px;
+  Line-height: 20px;
+}
+
+.product-card__picture{
+  height: 315px;
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.product-card__price{
+  Font-size: 17px;
+  Line-height: 24px;
+  font-weight: 700;
+  width: 154px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 24.5px;
+  color: #444444;
+}
+
+.product-card__button{
+  text-decoration: none;
+  display: block;
+  padding: 16px 70px;
+  border: 2px solid #444444;
+}
+
+.button-intro{
+  display: block;
+  Font-size: 18px;
+  Line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  width: 120px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.product-card__button:hover{
+  background-color: #444444;
+}
+
+.product-card__button:hover .button-intro{
+  color: #FFFFFF;
+}
+
+.product-card__button:active .button-intro{
+  opacity: 30%;
+}
+
+/*  popup */
+
+.wrapper{
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.popup{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.2s ease 0s;
+}
+
+.popup.open{
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popup__body{
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+
+}
+
+.popup__content{
+  background-color: #FFFFFF;
+  color: #000;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+}
+
+.popup__close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+.popup__title{
+  font-size: 40px;
+  margin: 0px 0px 1em 0px;
+}
+
+.popup__text{
+  Font-size: 17px;
+  Line-height: 18px;
+}
+
+.body.lock{
+  overflow: hidden;
+}
+
+
+/*  */
+
+/* коротко о нас *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+.page-main__about-us{
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 31px;
+  padding-bottom: 38px;
+}
+
+.about-us__title{
+  margin: 0;
+  Font-size: 25px;
+  Line-height: 30px;
+}
+
+.about-us__discription{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us__discription-item{
+  Font-size: 17px;
+  Line-height: 20px;
+  font-weight: 700;
+  padding-top: 83px;
+}
+
+.one{
+  background: url(../img/page/icon-1.svg) top 27px left 8px/ 33px 38px no-repeat;
+}
+
+.two{
+  background: url(../img/page/icon-2.svg) top 30px left 0px/ 47px 27px no-repeat;
+}
+
+.three{
+  background: url(../img/page/icon-3.svg) top 35px left 7px/ 34px 27px no-repeat;
+}
+
+.four{
+  background: url(../img/page/icon-4.svg) top 32px left 3px/ 35px 34px no-repeat;
+}
+
+.five{
+  background: url(../img/page/icon-5.svg) top 33px left -6px/ 55px 23px no-repeat;
+}
+
+.six{
+  background: url(../img/page/icon-6.svg) top 32px left 3px/ 33px 32px no-repeat;
+}
+
+/* Отзывы *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+.page-main__reviews{
+  background: url(../img/page/mob/zigzag-line.svg) bottom left/ 320px 6px repeat-x;
+}
+
+.page-main__reviews-wrapper{
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 51px;
+}
+
+.page-main__reviews-title{
+  margin: 0;
+  margin-bottom: 14px;
+  Font-size: 25px;
+  Line-height: 30px;
+}
+
+.page-main__review{
+  margin-bottom: 33px;
+  Font-size: 15px;
+  Line-height: 30px;
+  color: #444444;
+}
+
+.page-main__review-author{
+  margin: 0;
+  margin-bottom: 30px;
+  Font-size: 17px;
+  Line-height: 24px;
+  color: #444444;
+}
+
+.review-author__name{
+  color: #000;
+  font-weight: 700;
+}
+
+.reviews-slider__button{
+  display: flex;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+
+.reviews-slider__prev,
+.reviews-slider__next{
+  width: 130px;
+  height: 52px;
+  border: 1px solid #ECECEC;
+  padding: 0;
+  margin: 0;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.reviews-slider__prev{
+  background: url(../img/page/slider-prev.svg) top 13px left 38px/ 50px 26px no-repeat;
+}
+
+.reviews-slider__next{
+  background: url(../img/page/slider-next.svg) top 13px left 37px/ 50px 26px no-repeat;
+}
+
+.reviews-slider__prev:hover,
+.reviews-slider__next:hover{
+  opacity: 60%;
+}
+
+.reviews-slider__prev:active,
+.reviews-slider__next:active{
+  opacity: 30%;
+}
+
+.page-main__review-button{
+  text-decoration: none;
+  display: block;
+  padding: 16px 65px;
+  border: 2px solid #444444;
+}
+
+.page-main__review-button:hover{
+  background-color: #444444;
+}
+
+.page-main__review-button:hover .button-intro{
+  color: #FFFFFF;
+}
+
+.page-main__review-button:active .button-intro{
+  opacity: 30%;
+}
+
+/* контакты *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+.page-main__contacts{
+  padding-bottom: 39px;
+}
+
+.page-main__contacts-wrapper{
+  width: 260px;
+  padding-top: 38px;
+  margin: 0 auto;
+}
+
+.page-main__contacts-title{
+  margin: 0;
+  margin-bottom: 28px;
+  Font-size: 18px;
+  Line-height: 30px;
+}
+
+.page-main__contacts-items{
+  margin: 0;
+  margin-bottom: 62px;
+}
+
+.page-main__contacts-item{
+  display: flex;
+  justify-content: space-between;
+  color: #444444;
+  Font-size: 14px;
+  Line-height: 30px;
+  margin-top: 30px;
+}
+
+.page-main__contacts-item:first-child{
+  margin-top: 0;
+}
+
+.contacts-address__intro{
+  display: block;
+  width: 183px;
+}
+
+.contacts-mail__intro-link{
+  display: block;
+  text-decoration: none;
+  width: 183px;
+  color: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  position: relative;
+}
+
+.contacts-mail__intro-link::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #62D1BA;
+}
+
+.contacts-mail__intro-link:hover{
+  color: #46C1AE;
+}
+
+.contacts-mail__intro-link:hover::after{
+  background-color: #46C1AE;
+}
+.contacts-mail__intro-link:active::after{
+  opacity: 10%;
+}
+
+.page-main__contacts-map{
+  width: 100%;
+  height: 454px;
+  margin-bottom: 42px;
+}
+
+.page-main__contacts-button{
+  display: block;
+  text-decoration: none;
+  padding: 16px 37px;
+  width: 186px;
+  border: 2px solid #444444;
+  margin: 0 auto;
+}
+
+.page-main__contacts-button .button-intro{
+  width: 186px;
+}
+
+.page-main__contacts-button:hover{
+  background-color: #444444;
+}
+
+.page-main__contacts-button:hover .button-intro{
+  color: #FFFFFF;
+}
+
+.page-main__contacts-button:active .button-intro{
+  opacity: 30%;
+}
+
+
+@media (min-width: 768px){
+
+  .page-main__title{
+    font-size: 43px;
+    line-height: 50px;
+    max-width: 668px;
+    padding-top: 110px;
+    padding-bottom: 372px;
+    background: url(../img/page/tab/hero-desktop.jpg) top -55px center/ 132% 132% no-repeat;
+  }
+
+  @media (min-resolution: 2dppx){
+    .page-main__title{
+      background: url(../img/page/tab/hero-desktop@2x.jpg) top -55px center/ 132% 132% no-repeat;
+    }
+  }
+
+  .product-categories__wrapper{
+    display: grid;
+    grid-template-columns: 334px 334px;
+    grid-template-rows: 119px;
+    align-items: end;
+    text-align: bottom;
+    width: 668px;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+    position: relative;
+  }
+
+  .page-main__product-categories{
+    background-color: #FAFAFA;
+    position: relative;
+  }
+
+  .product-categories__icon-item{
+    display: block;
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+  }
+
+  .product-categories__list-link{
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 25px;
+    padding-bottom: 34px;
+    height: 60px;
+  }
+
+  .product-categories__list-link:hover{
+    margin-bottom: 5px;
+  }
+
+  .list-link__intro{
+    display: block;
+    max-width: 131px;
+    padding-left: 36px;
+  }
+
+  .interior-items__icon{
+    top: 30px;
+  }
+
+  .toys__icon{
+    top: 31px;
+    right: 33px;
+  }
+
+  /* товар недели *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+  .page-main__product-card{
+    background: url(../img/page/mob/zigzag-line.svg) bottom left/ 772px 17px repeat-x;
+  }
+
+  .product-card__wrapper{
+    width: 668px;
+    padding-bottom: 69px;
+    position: relative;
+    padding-top: 39.5px;
+  }
+
+  .product-card__title{
+    margin-bottom: 37.5px;
+    width: 450px;
+    Font-size: 43px;
+    Line-height: 50px;
+  }
+
+  .product-card__category-title{
+    margin-bottom: 0;
+    width: 100px;
+    Line-height: 17px;
+    position: absolute;
+    text-align: center;
+    top: 39.5px;
+    right: 0px;
+  }
+
+  .product-card__discription-intro{
+    margin-bottom: 48px;
+    width: 292px;
+    Font-size: 17px;
+    Line-height: 30px;
+  }
+
+  .product-card__discription{
+    margin-bottom: 57px;
+    width: 292px;
+  }
+
+  .product-card__picture{
+    height: 410px;
+    width: 334px;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+  }
+
+  .product-card__price{
+    Font-size: 20px;
+    width: 174px;
+    margin-left: 57px;
+    margin-top: 0;
+    margin-bottom: 33px;
+    text-align: center;
+  }
+
+  .product-card__button{
+    padding: 16px 86px;
+    border: 2px solid #444444;
+    width: 120px;
+  }
+
+  .button-intro{
+    Font-size: 17px;
+  }
+
+  /* коротко о нас*//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+  .page-main__about-us{
+    width: 668px;
+    padding-top: 55.5px;
+    padding-bottom: 83px;
+  }
+
+  .about-us__title{
+    Font-size: 43px;
+    Line-height: 50px;
+  }
+
+  .about-us__discription{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    row-gap: 12px;
+  }
+
+  .about-us__discription-item{
+    Font-size: 20px;
+    Line-height: 22px;
+    padding-top: 97.5px;
+  }
+
+  .one{
+    background: url(../img/page/icon-1.svg) top 41.5px left 8px/ 33px 38px no-repeat;
+    grid-column: 1;
+  }
+
+  .two{
+    background: url(../img/page/icon-2.svg) top 45px left 8px/ 47px 27px no-repeat;
+    grid-column: 1;
+  }
+
+  .three{
+    background: url(../img/page/icon-3.svg) top 51px left 8px/ 34px 27px no-repeat;
+    grid-column: 1;
+  }
+
+  .four{
+    background: url(../img/page/icon-4.svg) top 45.5px left 8px/ 35px 34px no-repeat;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .five{
+    background: url(../img/page/icon-5.svg) top 47px left -6px/ 55px 23px no-repeat;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .six{
+    background: url(../img/page/icon-6.svg) top 46px left 3px/ 33px 32px no-repeat;
+    grid-column: 2;
+  }
+
+  /* отзывы *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+  .page-main__reviews{
+    background: url(../img/page/review.jpg) top left/ 350px 457px no-repeat,
+                 url(../img/page/mob/zigzag-line.svg) bottom left/ 772px 17px repeat-x;
+  }
+
+  .page-main__reviews-wrapper{
+    width: 668px;
+    padding-top: 82.5px;
+    padding-bottom: 132px;
+    position: relative;
+  }
+
+  .page-main__reviews-title{
+    margin-bottom: 38.5px;
+    Font-size: 43px;
+    Line-height: 50px;
+  }
+
+  .page-main__review{
+    margin-bottom: 61px;
+    Font-size: 17px;
+  }
+
+  .page-main__review-author{
+    margin-bottom: 0px;
+    Font-size: 18px;
+  }
+
+  .reviews-slider__button{
+    position: absolute;
+    right: 0;
+    top: 357.5px;
+    width: 174px;
+    margin-bottom: 0px;
+  }
+
+  .reviews-slider__prev,
+  .reviews-slider__next{
+    width: 87px;
+    height: 36px;
+    border: none;
+  }
+
+  .reviews-slider__prev{
+    background: url(../img/page/slider-prev.svg) top 5px left 18.5px/ 50px 26px no-repeat;
+  }
+
+  .reviews-slider__next{
+    background: url(../img/page/slider-next.svg) top 5px left 18.5px/ 50px 26px no-repeat;
+  }
+
+  .page-main__review-button{
+    width: 123px;
+    padding: 16px 26px;
+    border: 2px solid #444444;
+    position: absolute;
+    top: 82.5px;
+    right: 0;
+  }
+
+  /* контакты *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+  .page-main__contacts{
+    padding-bottom: 57px;
+  }
+
+  .page-main__contacts-wrapper{
+    width: 668px;
+    padding-top: 68px;
+    background: url(../img/page/flag.svg) top 46px right 0px/ 47px 81px no-repeat;
+  }
+
+  .page-main__contacts-title{
+    margin-bottom: 49px;
+    Font-size: 43px;
+    Line-height: 50px;
+  }
+
+  .page-main__contacts-items{
+    margin-bottom: 49px;
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 12.5px));
+    column-gap: 25px;
+  }
+
+  .page-main__contacts-item{
+    justify-content: left;
+    width: 321.5px;
+    Font-size: 17px;
+    margin-top: 0px;
+  }
+
+  .contacts-mail__intro-link{
+    width: 100%;
+  }
+
+  .contacts-item__name{
+    padding-right: 30px;
+  }
+
+  .contacts-address__intro{
+    width: 257px;
+  }
+
+  .page-main__contacts-map{
+    height: 457px;
+    margin-bottom: 55px;
+  }
+
+  .page-main__contacts-button{
+    padding: 16px 26px;
+    width: 178px;
+  }
+
+  .page-main__contacts-button .button-intro{
+    width: 178px;
+  }
+}
+
+@media (min-width: 1150px){
+
+  .page-main__title{
+    font-size: 53px;
+    line-height: 57px;
+    max-width: 700px;
+    padding-top: 114px;
+    padding-bottom: 355px;
+    background: url(../img/page/des/hero-desktop.jpg) top -55px center/ 130% 130% no-repeat;
+  }
+
+  @media (min-resolution: 2dppx){
+    .page-main__title{
+      background: url(../img/page/des/hero-desktop@2x.jpg) top -55px center/ 130% 130% no-repeat;
+    }
+  }
+
+  .product-categories__icon-item{
+    height: 34px;
+    bottom: -15px;
+  }
+  /*  товар недели *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+  .page-main__product-card{
+    background: none;
+  }
+
+  .product-card__wrapper{
+    width: 875px;
+    padding-bottom: 96px;
+    padding-left: 125px;
+    padding-top: 207px;
+    background: url(../img/page/mob/zigzag-line.svg) bottom left/ 1050px 23px no-repeat;
+  }
+
+  .product-card__title{
+    position: absolute;
+    top: 0;
+    left: 125px;
+    margin-top: 115px;
+    margin-bottom: 33px;
+    width: 545px;
+    Font-size: 53px;
+    Line-height: 57px;
+    z-index: 14;
+  }
+
+  .product-card__category-title{
+    top: 123px;
+    left: 0px;
+  }
+
+  .product-card__discription-intro{
+    margin-bottom: 60px;
+  }
+
+  .product-card__discription{
+    margin-bottom: 109px;
+  }
+
+  .product-card__picture{
+    height: 636px;
+    width: 525px;
+    top: 57px;
+    z-index: 2;
+  }
+
+  /* коротко о нас *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+  .page-main__about-us{
+    width: 700px;
+    padding-top: 68px;
+    padding-bottom: 90px;
+  }
+
+  .about-us__title{
+    Font-size: 53px;
+    Line-height: 57px;
+  }
+
+  .about-us__discription{
+    row-gap: 15px;
+  }
+
+  .about-us__discription-item{
+    padding-top: 95px;
+  }
+
+  .one{
+    background: url(../img/page/icon-1.svg) top 39px left 8px/ 33px 38px no-repeat;
+  }
+
+  .two{
+    background: url(../img/page/icon-2.svg) top 42px left 8px/ 47px 27px no-repeat;
+  }
+
+  .three{
+    background: url(../img/page/icon-3.svg) top 48px left 8px/ 34px 27px no-repeat;
+  }
+
+  .four{
+    background: url(../img/page/icon-4.svg) top 43px left 8px/ 35px 34px no-repeat;
+  }
+
+  .five{
+    background: url(../img/page/icon-5.svg) top 45px left -6px/ 55px 23px no-repeat;
+  }
+
+  .six{
+    background: url(../img/page/icon-6.svg) top 43px left 3px/ 33px 32px no-repeat;
+  }
+
+  /* отзывы *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+
+  .page-main__reviews{
+    background: none;
+  }
+
+  .page-main__reviews-wrapper{
+    width: 875px;
+    padding-top: 78px;
+    padding-bottom: 186px;
+    padding-left: 175px;
+    background: url(../img/page/review.jpg) top left/ 350px 457px no-repeat,
+                 url(../img/page/mob/zigzag-line.svg) bottom left/ 1050px 23px no-repeat;
+  }
+
+  .page-main__reviews-title{
+    margin-bottom: 35px;
+    Font-size: 53px;
+    Line-height: 57px;
+  }
+
+  .page-main__review{
+    margin-bottom: 44px;
+  }
+
+  .page-main__review-author{
+    Font-size: 17px;
+  }
+
+  .reviews-slider__button{
+    top: 308.5px;
+  }
+
+  /* контакты *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+  .page-main__contacts{
+    padding-bottom: 105px;
+
+  }
+
+  .page-main__contacts-wrapper{
+    width: 875px;
+    padding-top: 71px;
+    padding-left: 175px;
+    background: url(../img/page/flag.svg) top 133px left 63px/ 47px 81px no-repeat;
+  }
+
+  .page-main__contacts-title{
+    margin-top: 79px;
+    margin-bottom: 34.5px;
+    Font-size: 53px;
+    Line-height: 57px;
+  }
+
+  .page-main__contacts-items{
+    margin-bottom: 84.5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-main__contacts-item{
+    justify-content: left;
+    width: 321.5px;
+    Font-size: 17px;
+    margin-top: 30px;
+  }
+
+  .page-main__contacts-item:first-child{
+    margin-top: 0;
+  }
+
+  .contacts-address__intro{
+    width: 250px;
+  }
+
+  .contacts-map__wrapper{
+    display: block;
+    width: 1050px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .page-main__contacts-map{
+    width: 527px;
+    margin-bottom: 0;
+    position: absolute;
+    top: -402px;
+    right: 0px;
+  }
+
+  .page-main__contacts-button{
+    padding: 16px 27px;
+    width: 176px;
+    margin-left: 175px;
+  }
+
+  .page-main__contacts-button .button-intro{
+    width: 176px;
+  }
+}

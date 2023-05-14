@@ -1,0 +1,147 @@
+.page-footer{
+  background-color: #F1F1F1;
+}
+
+.page-footer__wrapper{
+  margin: 0 30px;
+}
+
+.page-footer__logo-item{
+  display: none;
+}
+
+.page-footer__social-list{
+  list-style: none;
+  margin: 0 69px;
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 27px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.page-footer__social-list::after{
+  content: "";
+  position: absolute;
+  left: -69px;
+  bottom: 0;
+  width: calc(100% + 69px + 69px) ;
+  height: 1px;
+  background-color: #E5E5E5;
+}
+
+.social__link-instagram{
+  padding-top: 7px;
+}
+
+.social__link-facebook{
+  padding-top: 2px;
+}
+
+.social__link-twitter{
+  padding-top: 9px;
+}
+
+.social-list__link-icon{
+  fill: #000000;
+}
+
+.social-list__link-icon:hover{
+  fill: #46C1AE;
+}
+
+.social-list__link-icon:active{
+  opacity: 30%;
+}
+
+.page-footer__copyrigh-wrapper{
+  padding-top: 22px;
+  padding-bottom: 23px;
+  text-align: center;
+  margin: 0 39px;
+}
+
+.page-footer__copyright{
+  text-decoration: none;
+  Font-size: 19px;
+  Line-height: 18px;
+  font-weight: 700;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.copyright__text{
+  padding-top: 7px;
+}
+
+.copyright__logo{
+  fill:  #63D1BB;
+}
+
+.page-footer__copyright:hover .copyright__logo{
+  fill: #46C1AE;
+}
+
+.page-footer__copyright:active .copyright__logo{
+  opacity: 30%;
+}
+
+@media (min-width: 768px){
+
+  .page-footer__wrapper{
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
+
+  .page-footer__logo-item{
+    display: block;
+    height: 34px;
+  }
+
+  .page-footer__logo{
+    fill: #000000;
+  }
+
+  .page-footer__logo-item:hover .page-footer__logo{
+    fill: #46C1AE;
+  }
+
+  .page-footer__logo-item:active .page-footer__logo{
+    opacity: 30%;
+  }
+
+  .page-footer__social-list{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .page-footer__social-list::after{
+    display: none;
+  }
+
+  .page-footer__copyrigh-wrapper{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .social-list__item{
+    margin-right: 40px;
+  }
+
+  .social-list__item:last-child{
+    margin-right: 0px;
+  }
+
+  .copyright__text{
+    padding-top: 7px;
+    margin-right: 25px;
+  }
+}
+
